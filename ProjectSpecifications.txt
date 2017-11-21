@@ -1,0 +1,6 @@
+A Web-page for a showroom.
+
+1.Main Page:
+	-menu bar with the following options: Home, About, Cars, Test Drive, Contact(and location)
+
+Each page will have it's own caracteristics.	

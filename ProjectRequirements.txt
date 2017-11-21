@@ -1,0 +1,14 @@
+1.Maine Page:
+	-menu: Home, About, Cars, Test Drive, Contact
+	-each menu option will redirect to a new page
+2.New Pages:
+	-the header will change for each one, in a representative manner
+3.Cars:
+	-will contain a list of cars and some information about them
+	-if a car is clicked, the user will be redirected to a new page with more information about that car and a schedule test drive option
+	-login is needed in order to schedule a test drive	
+Technology Used:
+	PHP;
+	CSS;
+	JavaScript;
+	MySql.
