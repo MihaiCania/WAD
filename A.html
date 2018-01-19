@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<title>Mercedes-Benz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+<body>
+
+<script src="accordion.js"></script>
+<script src="slideshow.js"></script>
+<script src="Acalculator.js"></script>
+
+<div class="sidebar bar-block light-grey" style="width:40%">
+  <div class="container black">
+    <h4>Menu</h4>
+  </div>
+
+  <img src="http://mercedes/store_images/view.php?id=6" alt="Fjords" style="width:100%">
+  <a href="home.html" class="bar-item w3-button green">Home</a>
+  
+  <button class="w3-button block left-align" onclick="myAccFunc('Accordion1')">
+  Cars <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="Accordion1" class="hide white card">
+    <a href="A.html" class="bar-item w3-button">A-Class</a>
+    <a href="C.html" class="bar-item w3-button">C-Class</a>
+    <a href="E.html" class="bar-item w3-button">E-Class</a>
+    <a href="S.html" class="bar-item w3-button">S-Class</a>
+  </div>
+
+  <a href="testdrive.html" class="bar-item w3-button">Test Drive</a>
+
+</div>
+
+<div style="margin-left:40%">
+
+
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="http://mercedes/store_images/view.php?id=1" style="width:100%">
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="http://mercedes/store_images/view.php?id=2" style="width:100%">
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="http://mercedes/store_images/view.php?id=3" style="width:100%">
+    <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Interior
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="http://mercedes/store_images/view.php?id=4" style="width:100%">
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="http://mercedes/store_images/view.php?id=5" style="width:100%">
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+
+<form id="price" class="w3-container w3-card-4">
+  <h2>Configurator A-Class</h2>
+  
+  <select id="line" class="w3-select w3-border" name="option" onchange="getTotal()">
+    <option value="none" disabled selected>Equipment Line</option>
+    <option value="sport">Sport +1000$</option>
+    <option value="comfort">Comfort +2000$</option>
+    <option value="amg">AMG +3500$</option>
+  </select>
+  
+  <select id="engine" class="w3-select w3-border" name="option" onchange="getTotal()">
+    <option value="none" disabled selected>Engine Type</option>
+    <option value="160">A160 Diesel 102HP +0$</option>
+    <option value="180">A180 Diesel 122HP +1100$</option>
+    <option value="200">A200 Petrol 156HP +2200$</option>
+	<option value="250">A250 Petrol 222HP +4000$</option>
+  </select>
+  
+  <select id="transmission" class="w3-select w3-border" name="option" onchange="getTotal()">
+    <option value="none" disabled selected>Transmission</option>
+    <option value="manual">6-speed Manual +0$</option>
+    <option value="automatic">7-speed 7G-DSG-Automatic +2500$</option>
+  </select>
+  
+    
+  <select id="color" class="w3-select w3-border" name="option" onchange="getTotal()">
+    <option value="none" disabled selected>Exterior Color</option>
+	<option value="black">Black +0$</option>
+	<option value="white">White +0$</option>
+	<option value="green">Green +0$</option>
+    <option value="red">Red +0$</option>
+	<option value="sblack">Special Black +800$</option>
+	<option value="pwhite">Polar White +800$</option>
+	<option value="mgreen">Metalic Green +600$</option>
+  </select>
+    
+  <select id="interior" class="w3-select w3-border" name="option" onchange="getTotal()">
+    <option value="none" disabled selected>Interior</option>
+    <option value="btextil">Black Textil +0$</option>
+    <option value="wtextil">White Textil +0$</option>
+	<option value="bhleather">Black Half Leather +500$</option>
+	<option value="whleather">White Half Leather +500$</option>
+	<option value="bfleather">Black Full Leather +1500$</option>
+	<option value="wfleather">White Full Leather +1500$</option>
+  </select>
+  
+  <p>
+	<div  id="totalPrice" class="w3-btn w3-teal">
+		<script>document.write(getTotal())</script>
+	</div>
+  </p>
+  
+</form>
+
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+</script>
+
+
+
+</div>
+</body>
+</html>

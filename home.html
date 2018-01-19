@@ -7,57 +7,59 @@
 <link rel="stylesheet" type="text/css" href="main.css">
 <body>
 
-<script src="script.js"></script>
+<script src="accordion.js"></script>
+<script src="slideshow.js"></script>
 
 <div class="sidebar bar-block light-grey" style="width:40%">
   <div class="container black">
     <h4>Menu</h4>
   </div>
 
-  <img src="image/mb.png" alt="Fjords" style="width:100%">
-  <a href="#" class="bar-item w3-button green">Home</a>
+  <img src="http://mercedes/store_images/view.php?id=6" alt="Fjords" style="width:100%">
+  <a href="home.html" class="bar-item w3-button green">Home</a>
   
   <button class="w3-button block left-align" onclick="myAccFunc('Accordion1')">
   Cars <i class="fa fa-caret-down"></i>
   </button>
   <div id="Accordion1" class="hide white card">
-    <a href="#" class="bar-item w3-button">A-Class</a>
-    <a href="#" class="bar-item w3-button">B-Class</a>
-    <a href="#" class="bar-item w3-button">C-Class</a>
-    <a href="#" class="bar-item w3-button">E-Class</a>
-    <a href="#" class="bar-item w3-button">S-Class</a>
+    <a href="A.html" class="bar-item w3-button">A-Class</a>
+    <a href="C.html" class="bar-item w3-button">C-Class</a>
+    <a href="E.html" class="bar-item w3-button">E-Class</a>
+    <a href="S.html" class="bar-item w3-button">S-Class</a>
   </div>
 
-  <button class="w3-button block left-align" onclick="myAccFunc('Accordion2')">
-  SUV <i class="fa fa-caret-down"></i>
-  </button>
-  <div id="Accordion2" class="hide white card">
-    <a href="#" class="bar-item w3-button">GLA</a>
-    <a href="#" class="bar-item w3-button">GLC</a>
-    <a href="#" class="bar-item w3-button">GLE</a>
-  </div>
-
-  <button class="w3-button block left-align" onclick="myAccFunc('Accordion3')">
-  Transporters <i class="fa fa-caret-down"></i>
-  </button>
-  <div id="Accordion3" class="hide white card">
-    <a href="#" class="bar-item w3-button">X-Class</a>
-    <a href="#" class="bar-item w3-button">Vito</a>
-    <a href="#" class="bar-item w3-button">Sprinter</a>
-  </div>
-
-  <a href="#" class="bar-item w3-button">Appointments</a>
-  <a href="#" class="bar-item w3-button">Contact</a>
+  <a href="testdrive.html" class="bar-item w3-button">Test Drive</a>
 
 </div>
 
 <div style="margin-left:40%">
+	<div class="w3-content w3-display-container">
 
-<div class="container">
-  <h2>Information for all</h2>
-  <p>Each car will be showed with a bunch of details and a slideshow with images</p>
-</div>
+	<div class="w3-display-container mySlides">
+		<img src="http://mercedes/store_images/view.php?id=33" style="width:100%">
+	</div>
+	
+	<div class="w3-display-container mySlides">
+		<img src="http://mercedes/store_images/view.php?id=34" style="width:100%">
+	</div>
+	
+	<div class="w3-display-container mySlides">
+		<img src="http://mercedes/store_images/view.php?id=35" style="width:100%">
+	</div>
+	
+	<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
 
+	<div class="w3-container w3-card-4 we-light-grey w3-margin"   style="text-align:center">
+		<h1>New Mercedes-Benz Showroom in Timisoara</h1>
+		<p>
+		We are glad to announce that we have opened a new Mercedes-Benz Showroom in Timisoara. </p>
+	</div>
+	</div>
 </div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+</script>
 </body>
 </html>

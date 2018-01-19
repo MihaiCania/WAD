@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<title>Mercedes-Benz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+<body>
+
+<script src="accordion.js"></script>
+<script src="slideshow.js"></script>
+<script src="Scalculator.js"></script>
+
+<div class="sidebar bar-block light-grey" style="width:40%">
+  <div class="container black">
+    <h4>Menu</h4>
+  </div>
+
+  <img src="http://mercedes/store_images/view.php?id=6" alt="Fjords" style="width:100%">
+  <a href="home.html" class="bar-item w3-button green">Home</a>
+  
+  <button class="w3-button block left-align" onclick="myAccFunc('Accordion1')">
+  Cars <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="Accordion1" class="hide white card">
+    <a href="A.html" class="bar-item w3-button">A-Class</a>
+    <a href="C.html" class="bar-item w3-button">C-Class</a>
+    <a href="E.html" class="bar-item w3-button">E-Class</a>
+    <a href="S.html" class="bar-item w3-button">S-Class</a>
+  </div>
+
+  <a href="testdrive.html" class="bar-item w3-button">Test Drive</a>
+
+</div>
+
+<div style="margin-left:40%">
+
+<div class="container">
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="http://mercedes/store_images/view.php?id=25" style="width:100%">
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="http://mercedes/store_images/view.php?id=26" style="width:100%">
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="http://mercedes/store_images/view.php?id=27" style="width:100%">
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="http://mercedes/store_images/view.php?id=28" style="width:100%">
+    <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Brabus Edition
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="http://mercedes/store_images/view.php?id=29" style="width:100%">
+    <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    2018 Model
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="http://mercedes/store_images/view.php?id=30" style="width:100%">
+    <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    2018 Model
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="http://mercedes/store_images/view.php?id=31" style="width:100%">
+    <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Interior
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="http://mercedes/store_images/view.php?id=32" style="width:100%">
+    <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Interior
+  </div>
+</div>
+
+
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+
+<form id="price" class="w3-container w3-card-4">
+  <h2>Configurator S-Class</h2>
+  
+  <select id="line" class="w3-select w3-border" name="option" onchange="getTotal()">
+    <option value="none" disabled selected>Equipment Line</option>
+    <option value="luxury">Luxury +8000$</option>
+    <option value="amg">AMG +20000$</option>
+    <option value="brabus">Brabus Edition +34000$</option>
+  </select>
+  
+  <select id="engine" class="w3-select w3-border" name="option" onchange="getTotal()">
+    <option value="none" disabled selected>Engine Type</option>
+    <option value="300">S300 Diesel 244HP +0$</option>
+	<option value="p">S300 Petrol 281HP +0$</option>
+	<option value="400">S400 Petrol 333HP +4000$</option>
+	<option value="500">S500 Petrol 450HP +9000$</option>
+	<option value="63">S63 Petrol 601HP +11000$</option>
+	<option value="65">S65 Petrol 655HP +15000$</option>
+	<option value="b65">S65 Brabus Petrol 800HP +21000$</option>
+  </select>
+  
+  <select id="transmission" class="w3-select w3-border" name="option" onchange="getTotal()">
+    <option value="none" disabled selected>Transmission</option>
+    <option value="7automatic">7-speed 7G-DSG-Automatic +0$</option>
+	<option value="automatic">8-speed Brabus-DSG-Automatic +5500$</option>
+  </select>
+  
+  <select id="4matic" class="w3-select w3-border" name="option" onchange="getTotal()">
+    <option value="none" disabled selected>Distribution</option>
+    <option value="no">Rear wheel drive +0$</option>
+	<option value="yes">4Matic +7500$</option>
+  </select>  
+  
+  <select id="color" class="w3-select w3-border" name="option" onchange="getTotal()">
+    <option value="none" disabled selected>Exterior Color</option>
+	<option value="black">Black +0$</option>
+	<option value="white">White +0$</option>
+	<option value="brown">Brown +0$</option>
+	<option value="sblack">Special Black +2200$</option>
+	<option value="pwhite">Polar White +2200$</option>
+	<option value="mbrown">Metalic Brown +2500$</option>
+	<option value="bblack">Brabus Special Black + 8800$</option>
+  </select>
+    
+  <select id="interior" class="w3-select w3-border" name="option" onchange="getTotal()">
+    <option value="none" disabled selected>Interior</option>
+	<option value="bfleather">Black Full Leather +0$</option>
+	<option value="wfleather">White Full Leather +0$</option>
+	<option value="special">Brown Special Full Leather +6000$</option>
+	<option value="aspecial">AMG Special Full Leather +8000$</option>
+	<option value="bpecial">Brabus Special Full Leather +11000$</option>
+	
+  </select>
+  
+  <p>
+	<div  id="totalPrice" class="w3-btn w3-teal">
+		<script>document.write(getTotal())</script>
+	</div>
+  </p>
+  
+</form>
+
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+</script>
+
+</div>
+
+</div>
+</body>
+</html>
